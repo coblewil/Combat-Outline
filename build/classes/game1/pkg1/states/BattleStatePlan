@@ -1,0 +1,35 @@
+Allow players to set trap/protection spells before the battle
+Allow players to inspect enemy's stats
+
+
+
+
+
+constructor:
+BattleState(fighters){
+    //basically put them in their corners
+}
+
+
+init:   
+//decide who starts the battle off
+//create the order of people acting
+//start the battle
+
+battling:
+//activate whosever turn it is
+//let them pick their move
+//let them pick their target, and show the effect on the order of executing that move on that target
+//let the user commit that move
+    //calculate the chances for the move to miss
+    //calculate the chances for the target to dodge
+    //do the damage and/or effect
+//check to see if a player has been substituted
+//check to see if a player has died
+//check to see if the battle is over
+    if the battle is over
+        //run the end of battle sequence
+        >>exit to gameworld
+    if the battle is not over
+        //update the order of people acting
+        >>go to battling
